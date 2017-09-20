@@ -40,7 +40,7 @@
       <div class="col-lg-4">
         <ul class="list-group">
             <transition-group name="list">
-          <li class="list-group-item list-group-item-success" v-bind:class="{tachar: juego.eliminar}" v-on:click="eliminarjuego(juego)" v-for="juego in buscarJuego" v-if="mostrar" v-bind:key="juego.titulo" class="list-item">
+          <li class="list-group-item list-group-item-success text-center" v-bind:class="{tachar: juego.eliminar}" v-on:click="eliminarjuego(juego)" v-for="juego in buscarJuego" v-if="mostrar" v-bind:key="juego.titulo" class="list-item">
           {{ juego.titulo }}
           </li>
         </transition-group>
@@ -76,13 +76,13 @@
           </div>
         </div>
       </div>
-  </div>
-</div>
-<!--<br>
+      <!--<br> 
     <input type="range" min="0" max="10" v-model="minimo">
     <li v-for="juego in juegospuntuacion">
       {{juego.calificacion}}
     </li>-->
+  </div>
+</div>
   <script src="https://unpkg.com/vue@2.4.2/dist/vue.js"></script>
   <script src="js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
